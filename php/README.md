@@ -8,17 +8,38 @@ This example will perform the following steps:
 1. Retrieval of the userinfo
 1. Interprete the JSON answer in a structured way
 
-To use this example, make sure to have PHP properly installed.
+To run the example, you will need to :
 
-For this example to work, you will also need the [**Httpful library**](http://phphttpclient.com/) 
-installed. Note that while a version of this library has been provided with the example, this library does
-depend on php-curl, so make sure that is available within your environment as well
-(use 'sudo apt-get install php-curl' if you haven't already).
+1. have a working PHP setup, be it server or cli
+1. install the php5-curl module, which is required for httpful library used in the example
+1. install the [**Httpful library**](http://phphttpclient.com/)
+1. update the example with your own client_id and client_secret
+1. run the example
 
-To run the example, you can execute the script with:
+The following sections provide more detail on how to install the prerequisites and run the example.
 
-> php -f authenticationsamplehttpful.php
 
+## Installing httpful library
+
+    # Install prerequisites
+    sudo apt-get update
+    sudo apt-get install php5-curl
+
+    # Either download httpful.phar from main website, or use version provided in example
+    # To automatically download from main website:
+    curl -o 'httpful.phar' http://phphttpclient.com/downloads/httpful.phar
+
+## Running example
+
+The following section details how to run the example.
+
+    # Create example file and update example with your own client_id and client_secret
+    vi auth_example.php
+
+    # Run example
+    php -f auth_example.php
+
+# Feedback
 
 You're welcome to have a go with these and we welcome your comments, feedback, improvements, questions, ....
 
